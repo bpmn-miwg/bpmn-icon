@@ -36,6 +36,7 @@ Therefore, this extension uses a top-level `bpmn:relationship` as a container, e
 ```
 
 The relationship's `source` and `target` MUST point to the `id` of the `bpmn:definitions` root element.
+Note that the [relationship XML example in the BPMN specification text](https://www.omg.org/spec/BPMN/2.0/PDF?page=93) is not schema-valid.
 
 Icons are referenced from `BPMNDiagramElements` using `icon:iconRef`:
 
