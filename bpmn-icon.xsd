@@ -4,21 +4,26 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified">
 
-    <xs:element name="iconDefinition" type="icon:tIconDefinition"/>
+    <xs:element name="iconDefinition" type="icon:tIconDefinition">
+        <xs:annotation>
+            <xs:documentation>
+                This element is meant to be placed inside
+                the bpmn:extensionElements of a bpmn:relation.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
 
     <xs:complexType name="tIconDefinition">
         <xs:attribute name="id" type="xs:ID" use="required"/>
         <xs:attribute name="href" type="xs:anyURI" use="required"/>
     </xs:complexType>
 
-    <xs:attributeGroup name="iconRefAttributeGroup">
-        <xs:attribute name="iconRef" type="xs:QName" use="optional">
-            <xs:annotation>
-                <xs:documentation>
-                    This attribute points to the id of the iconDefinition.
-                </xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
+    <xs:attribute name="iconRef" type="xs:QName">
+        <xs:annotation>
+            <xs:documentation>
+                This attribute points to the id of the iconDefinition.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
 
 </xs:schema>
