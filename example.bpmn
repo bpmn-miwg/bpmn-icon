@@ -3,7 +3,12 @@
   xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
   xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
   xmlns:icon="http://www.omg.org/spec/BPMN/non-normative/Icon"
-  id="Definitions" targetNamespace="http://example.org">
+  id="Definitions" targetNamespace="http://example.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.omg.org/spec/BPMN/non-normative/Icon
+    ./bpmn-icon.xsd
+  ">
   <process id="ProcessWithIcon">
     <startEvent id="StartEvent" />
   </process>
