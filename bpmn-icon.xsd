@@ -1,0 +1,29 @@
+<xs:schema id="bpmn-icon" version="0.1" 
+    targetNamespace="http://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:icon="http://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xs:element name="iconDefinition" type="icon:tIconDefinition">
+        <xs:annotation>
+            <xs:documentation>
+                This element is meant to be placed inside
+                the bpmn:extensionElements of a bpmn:relationship.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="tIconDefinition">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="href" type="xs:anyURI" use="required"/>
+    </xs:complexType>
+
+    <xs:attribute name="iconRef" type="xs:QName">
+        <xs:annotation>
+            <xs:documentation>
+                This attribute points to the id of the iconDefinition.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+</xs:schema>
