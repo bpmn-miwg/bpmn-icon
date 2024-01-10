@@ -1,0 +1,22 @@
+<xs:schema id="BPMNDI-with-iconRef" version="0.1"
+    targetNamespace="http://www.omg.org/spec/BPMN/20100524/DI"
+    xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+    xmlns:icon="http://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xs:import schemaLocation="bpmn-icon.xsd"
+        namespace="http://www.omg.org/spec/BPMN/non-normative/Icon"/>
+    
+    <!-- Extend BPMNShape with iconRef -->
+    <xs:redefine schemaLocation="BPMN/BPMNDI.xsd">
+        <xs:complexType name="BPMNShape">
+            <xs:complexContent>
+                <xs:extension base="bpmndi:BPMNShape">
+                    <xs:attribute ref="icon:iconRef" use="optional"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:redefine>
+
+</xs:schema>
