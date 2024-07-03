@@ -4,10 +4,18 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified">
 
+    <xs:annotation>
+        <xs:documentation>
+            This XML schema defines and documents an extension of BPMN 2.0
+            for interchanging custom icons.
+        </xs:documentation>
+    </xs:annotation>
+
     <xs:element name="iconDefinition" type="icon:tIconDefinition">
         <xs:annotation>
             <xs:documentation>
-                This element is meant to be placed inside
+                This element defines a custom icon
+                and is meant to be placed inside
                 the bpmn:extensionElements of a bpmn:relationship.
             </xs:documentation>
         </xs:annotation>
@@ -21,7 +29,10 @@
     <xs:attribute name="iconRef" type="xs:QName">
         <xs:annotation>
             <xs:documentation>
-                This attribute points to the id of the iconDefinition.
+                This attribute points to the id of the iconDefinition
+                and is meant to be placed inside the bpmndi:BPMNShape element.
+                It is of type xs:QName to allow for referencing iconDefinitions
+                that are imported from another BPMN file using bpmn:import.
             </xs:documentation>
         </xs:annotation>
     </xs:attribute>

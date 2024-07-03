@@ -1,6 +1,9 @@
-# BPMN 2.0 Extension for Custom Icons
+# BPMN Icon Extension (bpmn-icon)
 
-This specification defines a BPMN 2.0 Extension for interchanging custom icons.
+This specification defines an extension of BPMN 2.0 for interchanging custom icons.
+It uses the [extension mechanism of BPMN](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=72)
+to transport additional markers, which are explicitly permitted in
+[section 2.2.3 Visual Appearance](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=38).
 
 ## Design considerations
 
@@ -36,7 +39,7 @@ Therefore, this extension uses a top-level `bpmn:relationship` as a container, e
 ```
 
 The relationship's `source` and `target` MUST point to the `id` of the `bpmn:definitions` root element.
-Note that the [relationship XML example in the BPMN specification text](https://www.omg.org/spec/BPMN/2.0/PDF?page=93) is not schema-valid.
+Note that the [relationship XML example in the BPMN specification text](https://www.omg.org/spec/BPMN/2.0/PDF#page=93) is not schema-valid.
 
 Icons are referenced from `BPMNDiagramElements` using `icon:iconRef`:
 
