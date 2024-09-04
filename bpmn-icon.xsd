@@ -1,6 +1,8 @@
 <xs:schema id="bpmn-icon" version="0.1" 
-    targetNamespace="http://www.omg.org/spec/BPMN/non-normative/Icon"
-    xmlns:icon="http://www.omg.org/spec/BPMN/non-normative/Icon"
+    targetNamespace="https://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:icon="https://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+    xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified">
 
