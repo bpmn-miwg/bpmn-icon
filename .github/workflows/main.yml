@@ -19,7 +19,7 @@ jobs:
         uses: korelstar/xmllint-problem-matcher@v1
       - name: Validate example.bpmn using BPMN20.xsd
         id: xmllint
-        uses: ChristophWurst/xmllint-action@v1.2
+        uses: ChristophWurst/xmllint-action@v1
         with:
           xml-file: example.bpmn
           xml-schema-file: BPMN/BPMN20.xsd
