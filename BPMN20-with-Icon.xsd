@@ -1,0 +1,22 @@
+<xs:schema id="BPMN20-with-Icon" version="0.1"
+    targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL"
+    xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+    xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+    xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+    xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+    xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+    xmlns:icon="http://www.omg.org/spec/BPMN/non-normative/Icon"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xs:import schemaLocation="bpmn-icon.xsd"
+        namespace="http://www.omg.org/spec/BPMN/non-normative/Icon"/>
+
+    <xs:import schemaLocation="BPMNDI-with-iconRef.xsd"
+        namespace="http://www.omg.org/spec/BPMN/20100524/DI"/>
+
+    <xs:redefine schemaLocation="BPMN/BPMN20.xsd">
+        <!-- TODO: find a way to declare that iconDefinition is only allowed in bpmn:tRelationship -->
+    </xs:redefine>
+
+</xs:schema>

@@ -1,0 +1,13 @@
+{
+    "xml.references": [
+        {
+            "pattern": "**/*.bpmn",
+            "expressions": [
+                {
+                    "from": "BPMNShape/@iconRef",
+                    "to": "iconDefinition/@id"
+                }
+            ]
+        }
+    ]
+}
